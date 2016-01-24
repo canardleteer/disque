@@ -1,7 +1,7 @@
 Source: disque
 Section: unknown
 Priority: extra
-Maintainer: jdoe <jdoe@(none)>
+Maintainer: canardleteer <eris.has.a.dad@gmail.com>
 Build-Depends: debhelper (>= 8.0.0)
 Standards-Version: 3.9.3
 Homepage: <insert the upstream URL, if relevant>
@@ -11,5 +11,11 @@ Homepage: <insert the upstream URL, if relevant>
 Package: disque
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: Disque an in-memory, distributed job queue
+ Disque is an ongoing experiment to build a distributed, in-memory, message
+ broker. Its goal is to capture the essence of the "Redis as a jobs queue"
+ use case, which is usually implemented using blocking list operations,
+ and move it into an ad-hoc, self-contained, scalable, and fault tolerant
+ design, with simple to understand properties and guarantees, but still
+ resembling Redis in terms of simplicity, performance, and implementation
+ as a C non-blocking networked server.
